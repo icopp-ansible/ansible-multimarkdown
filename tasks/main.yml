@@ -1,0 +1,6 @@
+---
+- name: Install the latest stable Multimarkdown via Homebrew
+  package:
+    name: multimarkdown
+    state: latest
+  when: ansible_os_family == "Darwin"
